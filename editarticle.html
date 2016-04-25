@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Edit Article</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
+  </head>
+
+  <body>
+
+    <form class="margined">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" placeholder="Put title here" value="Grab from DB">
+      </div>
+
+      <div class="form-group">
+        <label for="content">Content:</label>
+        <textarea class="form-control" rows="5" >Grab from DB</textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="img1">ImgURL:</label>
+        <input type="text" class="form-control" placeholder="Paste URL here" value="Grab from DB">
+      </div>
+
+      <div class="form-group">
+        <label for="img2">ImgURL:</label>
+        <input type="text" class="form-control" placeholder="Paste URL here" value="Grab from DB">
+      </div>
+
+      <div class="form-group">
+        <label for="img3">ImgURL:</label>
+        <input type="text" class="form-control" placeholder="Paste URL here" value="Grab from DB">
+      </div>
+
+      <div class="form-group">
+        <label for="img4">ImgURL:</label>
+        <input type="text" class="form-control" placeholder="Paste URL here" value="Grab from DB">
+      </div>
+
+      <div class="form-group">
+        <label for="img5">ImgURL:</label>
+        <input type="text" class="form-control" placeholder="Paste URL here" value="Grab from DB">
+      </div>
+
+      <div class="switch">
+        <label>
+          教学园地
+          <input name='switch_Activate' type='hidden' value='0'>
+          <input id='$Customer_ID' name='switch_Activate'
+               type='checkbox' onclick='Switch_Activate(this.id)' checked value='1'>
+          <span class="lever"></span>
+          最新消息
+        </label>
+      </div>
+
+      <button type="submit" class="btn-lg btn-primary btn-centre">Edit</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
